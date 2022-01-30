@@ -1,0 +1,67 @@
+:root{
+    --topRightPaddle:0;
+    --topLeftPaddle:0;
+    --ballTop:180px;
+    --ballLeft:355px;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    width:100vw;
+    max-height:100vh;
+}
+.paddle{
+    width:20px;
+    height:100px;
+    background-color: #aaa;
+    position:absolute;
+    border-radius:10px;
+    margin:0 10px;
+}
+.right-paddle{
+    right:0;
+    top:var(--topRightPaddle);
+}
+.left-paddle{
+    left:0;
+    top:var(--topLeftPaddle);
+}
+.screen{
+    width:750px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid #000;
+    position:relative;
+    margin-top:1rem;
+    overflow:hidden;
+}
+.ball{
+    width:20px;
+    height:20px;
+    background-color: #777;
+    top:var(--ballTop);
+    left:var(--ballLeft);
+    position:absolute;
+    border-radius:50%;
+}
+.Points{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-flow:row wrap;
+    font-size:4rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.credits{
+    margin-top:20%;
+    text-align:center;
+    color:rgba(0 0 0 /.5);
+}
+.foo{
+    margin-top:2rem;
+    text-align: center;
+}
